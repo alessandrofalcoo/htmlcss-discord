@@ -63,12 +63,11 @@ html, body{
 }
 
 .jumbotron{
-    display: flex;
-    justify-content: center;
+    display: inline-flex;
     background-image: url(../assets/img/jumbo.png);
     height: 100%;
     button{
-        display: inline;
+        display: block;
         border-style: none;
         border-radius: 10px;
         padding: 0.5rem;
@@ -173,8 +172,6 @@ html, body{
     justify-content: center;
     height: 100%;
     .footer-primary-col{
-        border-style: dotted;
-        background-color: var(--footer-primary-col);
         flex-grow: 1;
         width: 25%;
         margin-top: 1rem;
@@ -183,24 +180,21 @@ html, body{
 
     }
     .footer-secondary-col{
-        border-style: dotted;
-        background-color: var(--footer-col);
+        color: white;
         flex-grow: 1;
         width: 18.75%;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
     .footer-tertiary-col{
-        border-style: dotted;
-        background-color: var(--footer-col);
+        color: white;
         flex-grow: 1;
         width: 18.75%;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
     .footer-quaternary-col{
-        border-style: dotted;
-        background-color: var(--footer-col);
+        color: white;
         flex-grow: 1;
         width: 18.75%;
         margin-top: 1rem;
@@ -208,8 +202,7 @@ html, body{
     }
     
     .footer-quinary-col{
-        border-style: dotted;
-        background-color: var(--footer-col);
+        color: white;
         flex-grow: 1;
         width: 18.75%;
         margin-top: 1rem;
@@ -219,6 +212,9 @@ html, body{
     }
     hr{
         background-color: gray;
+    }
+    ul{
+        list-style: none;
     }
     
 }
