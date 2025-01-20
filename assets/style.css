@@ -216,6 +216,11 @@ html, body{
     ul{
         list-style: none;
     }
+    #sign-up{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
     
 }
 
