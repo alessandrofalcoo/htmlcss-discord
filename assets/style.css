@@ -63,11 +63,10 @@ html, body{
 }
 
 .jumbotron{
-    display: inline-flex;
+    text-align: center;
     background-image: url(../assets/img/jumbo.png);
     height: 100%;
     button{
-        display: block;
         border-style: none;
         border-radius: 10px;
         padding: 0.5rem;
@@ -76,8 +75,7 @@ html, body{
 
     .jumbotron-content{
         padding: 1rem;
-        margin: 1rem;
-        width: 50%;
+        width: 100%;
         color: white;
     }
 }
@@ -85,6 +83,7 @@ html, body{
 .invite_only{
     display: flex;
     justify-content: center;
+    text-align: center;
     height: 100%;
     
     .invite_only-content{
@@ -108,6 +107,7 @@ html, body{
 .community{
     display: flex;
     justify-content: center;
+    text-align: center;
     background-color: var(--community-technology);
     height: 100%;
     .community-content{
@@ -132,6 +132,7 @@ html, body{
 .fandom{
     display: flex;
     justify-content: center;
+    text-align: center;
     height: 100%;
     .fandom-content{
         width: 60%;
@@ -154,6 +155,7 @@ html, body{
 .technology{
     display: flex;
     justify-content: center;
+    text-align: center;
     background-color: var(--community-technology);
     height: 100%;
     .technology-content{
@@ -164,21 +166,35 @@ html, body{
         margin-left: 10rem;
 
     }
+    .adventure{
+        text-align: center;
+        button{
+            margin-top: 1rem;
+        }
+        h2{
+            background-image: url(../assets/img/stars.svg);
+        }
+    }
 }
+
+
 
 .footer{
     background-color: var(--footer-background);
-    justify-content: center;
     .columns{
         display: flex;
     }
     .footer-primary-col{
+        color: white;
         flex-grow: 1;
         width: 25%;
+        padding-right: 0.5rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
         margin-left: 10rem;
 
+    }
+        
     }
     .footer-secondary-col{
         color: white;
@@ -222,13 +238,21 @@ html, body{
 
 .logo-btn{
     display: flex;
-    
+    justify-content: space-between;
+    img{
+        
+        max-width: min-content;
+        margin-left: 10rem;
+        
+    }
+    button{
+        margin-right: 10rem;
+        border-radius: 50px;
+        padding: 0.5rem;
+        border-style: none;
+        background-color: #8ea1e1;
+        color: white;
+        
+    }
 }
 
-img{
-    width: 100%;
-    height: 100%;
-   justify-content:flex-start ;
-   flex-grow: 1;
-   flex-wrap: wrap;
-}
