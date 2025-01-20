@@ -6,18 +6,9 @@
 }
 
 :root{
-    --header-container:#add8e6;
-    --header:#daa520;
-    --jumbotron-container: #00008b;
-    --jumbotron: #ee82ee;
-    --invite_only-left: #1e90ff;
-    --invite_only-right:#ffc0cb;
-    --community-technology: #d3d3d3;
-    --technology-content: #228b22;
     --footer-background: #23272a;
-    --footer-primary-col: #f08080;
-    --footer-col:#20b2aa;
     --logo-col:#3161e0;
+    --community-technology:#f6f6f6;
 
 }
 html, body{
@@ -58,14 +49,6 @@ html, body{
             display: flex;
             justify-content: flex-end;
             padding-bottom: 0.5rem;
-            button{
-                display: flex;
-                align-items: center;
-                border-style: none;
-                border-radius: 10px;
-                padding: 0.5rem;
-                margin: 0.5rem;
-            }
         }
         a{
             text-decoration: none;
@@ -84,6 +67,14 @@ html, body{
     justify-content: center;
     background-image: url(../assets/img/jumbo.png);
     height: 100%;
+    button{
+        display: inline;
+        border-style: none;
+        border-radius: 10px;
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+
     .jumbotron-content{
         padding: 1rem;
         margin: 1rem;
@@ -107,10 +98,10 @@ html, body{
     
     }
     .invite_only-secondary-content{
-        width: 40%;
-        margin-top: 1rem; 
+        width: auto;
+        margin-top: 2rem; 
         margin-bottom: 1rem;
-        margin-right:10rem;      
+        margin-right:10rem;
      
     }
 }
@@ -144,8 +135,6 @@ html, body{
     justify-content: center;
     height: 100%;
     .fandom-content{
-        border-style: dotted;
-        background-color: var(--invite_only-left);
         width: 60%;
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -155,8 +144,6 @@ html, body{
     
     }
     .fandom-secondary-content{
-        border-style: dotted;
-        background-color: var(--invite_only-right);
         width: 40%;
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -171,8 +158,6 @@ html, body{
     background-color: var(--community-technology);
     height: 100%;
     .technology-content{
-        border-style: dotted;
-        background-color: var(--technology-content);
         width: 100%;
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -232,4 +217,16 @@ html, body{
         margin-right: 10rem;
        
     }
+    hr{
+        background-color: gray;
+    }
+    
+}
+
+img{
+    width: 100%;
+    height: 100%;
+   justify-content:flex-start ;
+   flex-grow: 1;
+   flex-wrap: wrap;
 }
