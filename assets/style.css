@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --header-container: #add8e6;
+    --header: #daa520;
+    --jumbotron-container: #00008b;
+    --jumbotron: #ee82ee;
+    --invite_only-left: #1e90ff;
+    --invite_only-right:#ffc0cb;
+    --community-technology: #d3d3d3;
+    --technology-content: #228b22;
+    --footer-background: #23272a;
+    --footer-primary-col:#f08080;
+    --footer-col: #20b2aa;
+
+}
+html, body{
+    height: 100%;
+    margin-top: 3px;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .header-container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0.5rem;
+        margin-right: 10rem;
+        margin-left: 10rem;
+        padding: 0.25rem;
+        .logo{
+            flex-grow: 1;
+        }
+        nav{
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .login{
+            flex-grow: 1;
+            display: flex;
+            justify-content: flex-end;
+
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            margin-right: 1rem;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.jumbotron{
+    display: flex;
+    justify-content: center;
+    .jumbotron-content{
+        padding: 1rem;
+        margin: 1rem;
+        width: 450px;
+    }
+}
+
+.invite_only{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    
+    .invite_only-content{
+        width: 60%; 
+        margin-top: 1rem; 
+        margin-bottom: 1rem;
+        margin-left:10rem;      
+
+        
+    
+    }
+    .invite_only-secondary-content{
+        width: 40%;
+        margin-top: 1rem; 
+        margin-bottom: 1rem;
+        margin-right:10rem;      
+     
+    }
+}
+
+.community{
+    display: flex;
+    justify-content: center;
+    background-color: var(--community-technology);
+    height: 100%;
+    .community-content{
+        border-style: dotted;
+        background-color: var(--invite_only-right);
+        width: 40%;
+        margin-top: 1rem;
+        margin-bottom: 1rem; 
+        margin-left: 10rem;      
+     
+
+    
+    }
+    .community-secondary-content{
+        border-style: dotted;
+        background-color: var(--invite_only-left);
+        width: 60%;
+        margin-top: 1rem;  
+        margin-bottom: 1rem; 
+        margin-right: 10rem;      
+     
+    
+    }
+}
+
+.fandom{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    .fandom-content{
+        border-style: dotted;
+        background-color: var(--invite_only-left);
+        width: 60%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 10rem;      
+      
+
+    
+    }
+    .fandom-secondary-content{
+        border-style: dotted;
+        background-color: var(--invite_only-right);
+        width: 40%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 10rem;      
+      
+    }
+}
+
+.technology{
+    display: flex;
+    justify-content: center;
+    background-color: var(--community-technology);
+    height: 100%;
+    .technology-content{
+        border-style: dotted;
+        background-color: var(--technology-content);
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 10rem;
+        margin-left: 10rem;
+
+    }
+}
+
+.footer{
+    background-color: var(--footer-background);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    .footer-primary-col{
+        border-style: dotted;
+        background-color: var(--footer-primary-col);
+        flex-grow: 1;
+        width: 25%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 10rem;
+
+    }
+    .footer-secondary-col{
+        border-style: dotted;
+        background-color: var(--footer-col);
+        flex-grow: 1;
+        width: 18.75%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .footer-tertiary-col{
+        border-style: dotted;
+        background-color: var(--footer-col);
+        flex-grow: 1;
+        width: 18.75%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .footer-quaternary-col{
+        border-style: dotted;
+        background-color: var(--footer-col);
+        flex-grow: 1;
+        width: 18.75%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .footer-quinary-col{
+        border-style: dotted;
+        background-color: var(--footer-col);
+        flex-grow: 1;
+        width: 18.75%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 10rem;
+       
+    }
+}
