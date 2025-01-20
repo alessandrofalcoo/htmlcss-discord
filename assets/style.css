@@ -41,18 +41,27 @@ html, body{
         margin: 1rem 10rem;
         padding: 0.25rem;
         .logo{
+            display: flex;
             flex-grow: 1;
+            padding-top: 0.5rem;
+            align-items: center;
         }
         nav{
-            flex-grow: 2;
+            flex-grow: 1;
             display: flex;
             justify-content: center;
+            align-items: center;
+
         }
         .login{
             flex-grow: 1;
             display: flex;
             justify-content: flex-end;
+            padding-bottom: 0.5rem;
             button{
+                display: flex;
+                align-items: center;
+                border-style: none;
                 border-radius: 10px;
                 padding: 0.5rem;
                 margin: 0.5rem;
@@ -73,10 +82,13 @@ html, body{
 .jumbotron{
     display: flex;
     justify-content: center;
+    background-image: url(../assets/img/jumbo.png);
+    height: 100%;
     .jumbotron-content{
         padding: 1rem;
         margin: 1rem;
-        width: 450px;
+        width: 50%;
+        color: white;
     }
 }
 
