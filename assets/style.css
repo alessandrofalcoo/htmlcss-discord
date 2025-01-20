@@ -49,6 +49,11 @@ html, body{
             display: flex;
             justify-content: flex-end;
             padding-bottom: 0.5rem;
+            button{
+                border-radius: 50px;
+                padding: 0.5rem;
+                border-style: none;
+            }
         }
         a{
             text-decoration: none;
@@ -69,8 +74,12 @@ html, body{
     button{
         border-style: none;
         border-radius: 10px;
-        padding: 0.5rem;
+        padding: 0.8rem;
         margin: 0.5rem;
+    }
+    .open-discord{
+        background-color: black;
+        color: white;
     }
 
     .jumbotron-content{
@@ -180,6 +189,7 @@ html, body{
 
 
 .footer{
+    
     background-color: var(--footer-background);
     .columns{
         display: flex;
@@ -192,6 +202,10 @@ html, body{
         margin-top: 1rem;
         margin-bottom: 1rem;
         margin-left: 10rem;
+        
+        span{
+            display: flex;
+        }
 
     }
         
@@ -233,14 +247,11 @@ html, body{
     ul{
         list-style: none;
     }
-    
-}
-
 .logo-btn{
     display: flex;
     justify-content: space-between;
     img{
-        
+        text-align: center;
         max-width: min-content;
         margin-left: 10rem;
         
